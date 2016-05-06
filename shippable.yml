@@ -30,7 +30,7 @@ integrations:
     - integrationName: ship-awsecr-anyregion
       type: ecr  
       region: "us-west-2"
-    #  branches:
+    #  branches:  
      #   only:
       #    - master
       
