@@ -27,7 +27,7 @@ build:
     
 integrations:
   hub:
-    - integrationName: "plv2-ecs"
+    - integrationName: "ci-ecr"
       type: ecr  
       region: "us-west-2"
     #  branches:  
