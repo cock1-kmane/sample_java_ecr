@@ -13,7 +13,7 @@ build:
   pre_ci_boot:
     image_name: 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test
     image_tag: 24oct3
-    pull: false
+    pull: true
     #options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
@@ -22,8 +22,8 @@ build:
 
   post_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
-    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct3 .
-    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct3 
+    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct4 .
+    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct4 
     
 integrations:
   hub:
