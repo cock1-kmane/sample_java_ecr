@@ -17,7 +17,7 @@ build:
   pre_ci_boot:
     image_name: 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test 
     image_tag: latest
-    pull: false
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
