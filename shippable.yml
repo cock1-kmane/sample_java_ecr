@@ -22,13 +22,14 @@ build:
 
   post_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
-    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test24oct 
-    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test24oct 
+    - docker build -t=291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct1 .
+    - docker push 291318889788.dkr.ecr.us-west-2.amazonaws.com/revathi/test:24oct1 
     
 integrations:
   hub:
     - integrationName: ci-ecr
       type: ecr   
+      region: "us-west-2"
     #  branches:
      #   only:
       #    - master
