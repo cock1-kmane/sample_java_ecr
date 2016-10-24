@@ -12,11 +12,11 @@ env:
 build:
   pre_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-2.amazonaws.com/test-region .
-    - docker build -t=480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region1 .
+    - docker build -t=480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region24 .
     
   pre_ci_boot:
-    image_name: http://480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region1
-    image_tag: test
+    image_name: http://480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region24
+    image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
@@ -26,7 +26,7 @@ build:
 
   post_ci:
     #- docker build -t=480971114143.dkr.ecr.us-east-1.am-t=azonaws.com/vidya1-repo1 .
-    - docker push 480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region1: test
+    - docker push 480971114143.dkr.ecr.us-west-2.amazonaws.com/test-region24
     
 integrations:
   hub:
